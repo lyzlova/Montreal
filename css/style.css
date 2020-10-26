@@ -1,5 +1,10 @@
 :root {
-
+  --bcg-black-color: #17191e;
+  --bcg-white-color: #ffffff;
+  --bcg-yellow-color: #ffda00;
+  --yellow-title-color: #ffdb00;
+  --white-text-color: #ffffff;
+  --black-text-color: #181a1f;
 }
 
 html {
@@ -15,6 +20,9 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
+
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
 }
 
 img {
@@ -34,19 +42,235 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   padding: 0;
 }
 
+a {
+  display: block;
+}
+
 .container {
-  /* max-width: 986px; */
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* portfolio */
+
+/*  clients*/
+.clients {
+  background-color: var(--bcg-black-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.clients__title {
+  margin-bottom: 50px;
+  color: var(--yellow-title-color);
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.clients__text {
+  color: var(--white-text-color);
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 120px;
+}
+
+.clients-logo__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.clients-logo__item:not(:last-child) {
+  margin-right: 160px;
+}
+
+.carousel-indicators {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.indicator:not(:last-child) {
+  margin-right: 10px;
+}
+
+.indicator {
+  height: 10px;
+  width: 10px;
+  background-color: var(--white-text-color);
+}
+
+.active-ind {
+  background-color: var(--yellow-title-color);
+}
+
+/* contact */
+.contact {
+  padding-top: 120px;
+  padding-bottom: 94px;
+  background-color: var(--white-text-color);
+}
+
+.contact__title {
+  margin-bottom: 50px;
+  color: var(--yellow-title-color);
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  color: var(--black-text-color);
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 120px;
+}
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 970px;
+  color: var(--black-text-color);
+}
+
+.contact__form > input[type="text"],
+.contact__form > input[type="email"],
+.contact__form textarea {
+  padding: 14px 24px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  border: 2px solid var(--black-text-color);
+  resize: none;
+}
+
+.contact__form > input[type="submit"] {
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  padding: 24px 160px;
+  border: 1px solid var(--yellow-title-color);
+  background-color: var(--bcg-white-color);
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+}
+
+.input-name {
+  flex-basis: 48.45%;
+}
+
+.input-email {
+  flex-basis: 48.45%;
+  margin-bottom: 20px;
+}
+
+.input-subject {
+  flex-basis: 100%;
+}
+
+.input-message {
+  flex-basis: 100%;
+}
+
+/* info */
+.info {
+  background-color: var(--yellow-title-color);
+}
+
+.info__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 48px;
+  list-style: none;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+}
+
+.info__icon {
+  height: 80px;
+  width: 80px;
+  padding: 28px;
+  background-color: var(--black-text-color);
+  margin-right: 27px;
+}
+
+.info__list a {
+  text-decoration: none;
+  color: var(--black-text-color);
+  font-size: 20px;
+}
+/* footer */
+
+footer {
+  padding: 120px 370px;
+  color: var(--white-text-color);
+  background-color: var(--black-text-color);
+  align-items: center;
+  text-align: center;
+}
+
+footer p{
+  margin-bottom: 50px;
+}
+
+.accent {
+  color: var(--yellow-title-color);
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.social__list a,
+.social__icon {
+  height: 20px;
+  width: 20px;
+}
+
+.button-up__link {
+  margin-left: auto;
+  height: 50px;
+  width: 50px;
+}
+
+.button-up__img {
+  height: 50px;
+  width: 50px;
+  padding: 17px;
+  background-color: var(--yellow-title-color);
+}
+
+a:focus, 
+input:focus, 
+textarea:focus {
+  outline: 2px solid var(--yellow-title-color);;
 }
