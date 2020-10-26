@@ -273,3 +273,7 @@ input:focus,
 textarea:focus {
   outline: 2px solid var(--yellow-title-color);;
 }
+
+a:hover {
+	color:#00E1FF;
+}
